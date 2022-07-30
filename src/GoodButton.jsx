@@ -9,7 +9,7 @@ class GoodButton extends React.Component {
     return(
     <button 
       className="fancy-button"
-      onClick={this.handleClick}
+      onClick={event => this.handleClick(event)}
     >
       Click me!
     </button>
