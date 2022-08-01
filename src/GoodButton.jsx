@@ -3,13 +3,13 @@ import React from 'react';
 class GoodButton extends React.Component {
   handleClick(event) {
     console.log(event.target.textContent);
-    alert('Good job!');
+    alert('Click me!');
   }
   render() {
     return(
     <button 
       className="fancy-button"
-      onClick={event => this.handleClick(event)}
+      onClick={this.handleClick}
     >
       Click me!
     </button>
